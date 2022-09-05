@@ -24,3 +24,9 @@
         }
         return $tab;
     }
+
+    function afficherTableau($tab = []){
+        foreach ($tab as $cle => $valeur) {
+            echo $valeur." ";
+        }
+    }

@@ -8,12 +8,18 @@
 </head>
 <body>
     <?php
+
+        require_once('fonctions.php');
+
         echo "<h1>Les tableaux en PHP</h1>";
 
         //DECLARATION
         $tab = ["fatou", "bouba", "gora", "lika"];
         $entiers = [45, 12];
 
+        afficherTableau($tab);
+
+        echo "<br> Apres affichage";
         $entiers[] = 120;
 
         array_push($entiers, 25);
@@ -46,7 +52,7 @@
             echo "$indice : $el<br>";
         }
 
-        echo "<br> $firstItem";
+        // echo "<br> $firstItem";
     
     ?>
 
